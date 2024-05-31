@@ -16,8 +16,7 @@ video_pkgs="mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon \
 	libva-intel-driver lib32-libva-intel-driver intel-media-driver \
 	mesa-utils vulkan-tools nvidia-prime libva-utils lib32-mesa-utils"
 
-wine_pkgs="wine-tkg-staging-fsync-git winetricks-git wine-nine wineasio \
-	giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap \
+wine_pkgs="giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap \
 	gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal \
 	v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins \
 	lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo \
@@ -35,20 +34,16 @@ devel_pkgs=""
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
-	nano ttf-dejavu ttf-liberation lutris steam firefox mpv geany pcmanfm \
+	nano ttf-dejavu ttf-liberation pcmanfm \
 	htop qbittorrent speedcrunch gpicview file-roller xorg-xwayland \
-	steam-native-runtime gamemode lib32-gamemode jre17-openjdk lxterminal \
-	steamtinkerlaunch mangohud lib32-mangohud qt6-wayland wayland \
+	jre17-openjdk lxterminal \
+	qt6-wayland wayland \
 	lib32-wayland qt5-wayland retroarch xorg-server-xephyr openbox \
-	obs-studio gamehub minigalaxy legendary gamescope prismlauncher yt-dlp \
-	bottles playonlinux minizip retroarch-assets-ozone libretro-beetle-psx-hw \
-	libretro-blastem libretro-bsnes libretro-dolphin libretro-duckstation \
-	libretro-gambatte libretro-melonds libretro-mgba libretro-nestopia \
-	libretro-parallel-n64 libretro-pcsx2 libretro-picodrive libretro-ppsspp \
-	libretro-retrodream libretro-yabause sunshine blender"
+	obs-studio yt-dlp fpc klavaro \
+	blender"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist=""
+export aur_packagelist="anki-bin"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
@@ -63,7 +58,7 @@ enable_alhp_repo="true"
 # Feature levels for ALHP. Available feature levels are 2 and 3
 # For level 2 you need a CPU with SSE4.2 instructions
 # For level 3 you need a CPU with AVX2 instructions
-alhp_feature_level="2"
+alhp_feature_level="3"
 
 ########################################################################
 
