@@ -39,12 +39,12 @@ export packagelist="${audio_pkgs} ${video_pkgs} ${wine_pkgs} ${devel_pkgs} \
 	htop gpicview file-roller xorg-xwayland \
 	gamemode lib32-gamemode jre17-openjdk lxterminal \
 	mangohud lib32-mangohud qt6-wayland wayland lutris nasm yasm clisp \
-	lib32-wayland qt5-wayland xorg-server-xephyr openbox lib32-gtk2 lib32-libxi lib32-libxmu lib32-glu glu libxmu \
+	lib32-wayland qt5-wayland xorg-server-xephyr openbox lib32-gtk2 lib32-libxi lib32-libxmu lib32-glu glu libxmu libgccjit \
 	obs-studio yt-dlp sdl12-compat lib32-sdl12-compat sdl_sound sdl_gfx sdl_image grim audacity emacs-wayland kitty eyedropper \
-	minizip blender freecad fpc nim figlet pcre dictd gnome-dictionary zlib p7zip crawl-tiles cataclysm-dda-tiles stardict zig unarchiver glow steam qt6-multimedia-ffmpeg hyprpicker"
+	minizip blender freecad fpc nim figlet pcre dictd zlib p7zip crawl-tiles cataclysm-dda-tiles stardict zig unarchiver glow qt6-multimedia-ffmpeg hyprpicker"
 
 # If you want to install AUR packages, specify them in this variable
-export aur_packagelist="koreader-bin ncurses5-compat-libs lib32-ncurses5-compat-libs meowsans-ttf frogmouth goldendict-ng qalculate-gtk-git kew lutgen-bin gowall paleta tcolors"
+export aur_packagelist="koreader-bin ncurses5-compat-libs lib32-ncurses5-compat-libs meowsans-ttf frogmouth goldendict-ng lutgen-bin gowall paleta tcolors"
 
 # ALHP is a repository containing packages from the official Arch Linux
 # repos recompiled with -O3, LTO and optimizations for modern CPUs for
